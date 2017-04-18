@@ -12,5 +12,6 @@ services:
       - DOMAIN=example.com
       - HOSTED_ZONE_ID=*************
       - SLACKAPI=https://hooks.slack.com/services/*******************/************************
+      - UPDATEWAIT=3600
     container_name: route53-update
 

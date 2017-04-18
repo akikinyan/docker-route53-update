@@ -16,6 +16,9 @@ output="[default]\naws_access_key_id = ${AWS_ACCESS_KEY_ID}\naws_secret_access_k
 echo -e ${output} > /root/.aws/credentials
 
 # Route53 update 
-/root/ip_watch.sh
-
+while true
+do
+  /root/ip_watch.sh
+  sleep ${UPDATEWAIT}
+done
 exit 0
